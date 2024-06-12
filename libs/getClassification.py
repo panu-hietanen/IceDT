@@ -216,7 +216,7 @@ def goClassification(segOutput,ices_df, img, committee, scene_info, show_plot_pr
                         scene_info['pixel_area'], reshape_perc, reshape_perc_ajuste_lins,
                         reshape_perc_ajuste_cols, morfo_track_1, ices_df, export=True)
 
-    if img_result == []:
+    if not img_result:
         img_result = np.zeros_like(img)
         
     if plot_original:

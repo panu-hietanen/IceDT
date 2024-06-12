@@ -107,7 +107,7 @@ def pickle_masktif(mask, outfolder='./'):
 
 def improve_scene(sub_templateg, alg=1, classify=False):
     
-    ref = np.asarray(PIL.Image.fromarray(np.asarray(pd.read_pickle('./AuxFiles/refhist.pkl'))))
+    ref = np.asarray(PIL.Image.fromarray(np.asarray(pd.read_pickle('/content/drive/MyDrive/3YP/Code/IceDT/AuxFiles/refhist.pkl'))))
 
     if is_low_contrast(sub_templateg, 0.35):
         

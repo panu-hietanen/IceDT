@@ -5,14 +5,14 @@ def histogram(image):
 
     # n_bins = image.max() + 1
     n_bins = 256
-    hist, _ = np.histogram(image, normed=False, bins=n_bins, range=(0, n_bins-1))
+    hist, _ = np.histogram(image, bins=n_bins, range=(0, n_bins-1))
     return hist
     # return np.bincount(image.ravel())
 
 def histogram_eq(image):
 
     n_bins = image.max() + 1
-    hist, _ = np.histogram(image, normed=True, bins=n_bins, range=(0, n_bins-1))
+    hist, _ = np.histogram(image, bins=n_bins, range=(0, n_bins-1))
     return hist
 
 def histogram_levels(image):
